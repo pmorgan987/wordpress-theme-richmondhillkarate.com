@@ -1,0 +1,271 @@
+/*
+Theme Name: Richmond Hill Martial Arts
+Author: Patrick Morgan
+Author URI: https://patrick-morgan.com
+Description: This is the theme for the Richmond Hill Martial Arts Site
+Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* ******* FULL SITE STYLES ********** */
+
+:root {
+    --red-color: #ed1c24;
+}
+
+body {
+    background: url('images/body_bg.jpg') top left repeat;
+/*     font: normal 100%/1.25em Cambria, Georgia, Times, "Times New Roman", serif; */
+	font-family: 'Poppins', sans-serif;
+    color: #282828;
+}
+
+header {
+    position: relative;
+	background: url('images/dark_wood.png') top left repeat; 
+    width: 100%;
+}
+
+.container-main {
+    border-right: 5px solid #000;
+    border-left: 5px solid #000;
+    border-bottom: 5px solid #000;
+}
+
+.header-logo {
+    max-height: 147px;
+	padding: 10px;
+}
+#header-logo {
+    margin-bottom: 1em;
+}
+#header-logo img { 
+    max-width: 100%;
+}
+.header-address > div {
+    font-family: 'Anton', sans-serif;
+    /* font-family: 'Passion One', cursive; */
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+.header-address > div:first-of-type {
+    color: var(--red-color);
+    font-size: 1.85em;
+}
+.header-address > div > .fa-play {
+    color: var(--red-color);
+    margin-left: 10px;
+}
+.header-address > a  {
+    font-family: 'Anton', sans-serif;
+    /* font-family: 'Passion One', cursive; */
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+.header-address > a:first-of-type {
+    color: var(--red-color);
+    font-size: 1.85em;
+}
+.header-address > a > .fa-play {
+    color: var(--red-color);
+    margin-left: 10px;
+}
+#main-nav {
+    background-color: rgba(161, 151, 151, 0.5);
+}
+#main-nav a {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px #282828;
+    font-weight: bold;
+}
+.menu-item {
+    margin-right: 1.25em;
+}
+.dropdown-menu {
+    background-color: rgb(161, 151, 151);
+}
+.nav-menu-toggle {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px #282828;
+    font-weight: bold;
+}
+
+
+/* ************* INDEX PAGE MAIN SECTION ************* */
+#main-section {
+    background-color: #dbdbdb;
+    padding: 10px;
+    min-height: 400px;
+}
+h1.tagline {
+    font-family: sans-serif;
+    color: var(--red-color);
+    text-transform: uppercase;
+    word-spacing: 0.1em;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+.homepage-slider h2 {
+    font-family: sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+
+/* ************** INDEX PAGE FEATURED PROGRAMS ************* */
+#featured_programs {
+    background-color: #dbdbdb65;
+    margin-top: 10px;
+    margin-top: 20px;
+	color: #fff;
+/* 	display: none; */
+}
+#featured_programs h1, #featured_programs h2, #featured_programs h3 {
+	color: #fff;
+	text-align: center;
+}
+#featured_programs h1 {
+	font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    padding-top: 0.5em;
+    letter-spacing: 0.05em;
+}
+#featured_programs p {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+#featured_programs p:first-of-type {
+	margin-top: 1em;
+}
+#featured_programs .buttons {
+	text-align: center;
+}
+#featured_programs .buttons a {
+	margin: 1em;
+}
+
+#featured_programs .program-img img {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background: #45484d; /* Old browsers */
+    background: -moz-linear-gradient(top, #000000 0%, #45484d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #000000 0%,#45484d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #000000 0%,#45484d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=0 ); /* IE6-9 */
+    padding: 25px;
+}
+
+
+/* ********** MAIN FOOTER STYLES ************* */
+footer.container {
+    color: #fff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    background: rgba(0,0,0,0.5);
+}
+div#copyright {
+    font-size: 0.75em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ********** INSTRUCTOR STYLES ************* */
+.instructorRow {
+    margin-bottom: 4em;
+    padding-bottom: 1em;
+    /* border-bottom: #282828 dotted 1px; */
+}
+.instructorRow:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 98%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: #282828 dotted 1px; /* This creates the border. Replace black with whatever color you want. */
+}
+.instructorRow:last-of-type:after {
+    content: '';
+    border-bottom: 0px;
+}
+.instructorName{
+    text-transform: uppercase;
+    /* font-family: 'Anton', sans-serif; */
+    font-size: 1.8em;
+    font-weight: 900;
+    margin-right: 1.5em;
+    color: var(--red-color);
+}
+.instructorRank, .instructorTitle {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 800;
+    /* display: none; */
+}
+.instructorTitle {
+	margin-left: 1em;	
+}
+.instructorContent {
+    margin-top: 1em;
+}
+
+/* ********** PROGRAM STYLES ************* */
+.programRow {
+    padding-bottom: 1em;
+}
+.programRow:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 98%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: #282828 dotted 1px; /* This creates the border. Replace black with whatever color you want. */
+}
+.programRow:last-of-type:after {
+    content: '';
+    border-bottom: 0px;
+}
+.programName{
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 900;
+    margin-right: 1.5em;
+    color: var(--red-color);
+}
+.programContent {
+    margin-top: 1em;
+}
+
+
+/* ************** FOOTER STYLES ******************* */
+.container-footer h1 {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: var(--red-color);
+}
+.container-footer ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+.container-footer ul li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: block;
+}
+.container-footer ul li a {
+    color: #fff;
+}
