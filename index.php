@@ -22,11 +22,16 @@
     <?php $setactive = 1; ?>
     <?php while ( $feature->have_posts() ) : $feature->the_post(); ?>
         <div class="carousel-item<?php if($setactive) { ?> active<?php } ?>">
+        <?php 
+            $content = get_the_content();
+        ?>
             <div class="row homepage-slider">
+            <?php
+            if ($content != '') {
+            ?>
                 <div class="col-lg-7">
                     <h2><?php the_title(); ?></h2>
                     <?php 
-                        $content = get_the_content();
                         echo $content;
                     ?>
                 </div>
@@ -35,6 +40,17 @@
                     <img src="<?php the_post_thumbnail_url('home-slider-img'); ?>" class="img-fluid" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
                 </div>
                 <?php endif; ?>
+                <?php
+                } else {
+                ?>
+                <?php if (has_post_thumbnail()): ?>
+                <div class="col-lg-12 text-center">
+                    <img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
+                </div>
+                <?php endif; ?>
+                <?php
+                }
+                ?>
             </div>
         </div>
         <?php $setactive = 0; ?>
